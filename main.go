@@ -141,5 +141,5 @@ func main() {
 	router.HandleFunc("/dogs/{id}", getOneDog).Methods("GET")
 	router.HandleFunc("/dogs/{id}", deleteDog).Methods("DELETE")
 	router.HandleFunc("/dogs/{id}", updateDog).Methods("PUT")
-	log.Fatal(http.ListenAndServe(":3000", router))
+	log.Fatal(http.ListenAndServe(":8081", router))
 }
